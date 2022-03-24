@@ -1,10 +1,10 @@
 lock "3.17.0"
 set :application, "monka-app2"
-set :repo_url, "git@github.com:～" # github と連携後設定
+set :repo_url, "https://github.com/k-nishimoto-libertyfish/monka-app2.git" # github と連携後設定
 server "192.168.1.105", port: 2525, roles: [:app, :web, :db], primary: true
 # user
 set :user,            'deploy'
-set :use_sudo,        false
+set :use_sudo,        true
 # server
 set :stage,           :production
 set :deploy_via,      :remote_cache
