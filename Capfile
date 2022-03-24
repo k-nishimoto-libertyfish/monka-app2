@@ -37,6 +37,7 @@ require 'capistrano/rails'
 require 'capistrano/bundler'
 require 'capistrano/rbenv'
 require 'capistrano/puma'
+require 'capistrano/safe_deploy_to'
 
 install_plugin Capistrano::Puma  # Default puma tasks
 install_plugin Capistrano::Puma::Nginx  # if you want to upload a nginx site template
