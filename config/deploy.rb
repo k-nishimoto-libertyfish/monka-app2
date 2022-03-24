@@ -4,7 +4,7 @@ set :repo_url, "https://github.com/k-nishimoto-libertyfish/monka-app2.git" # git
 server "192.168.1.105", port: 2525, roles: [:app, :web, :db], primary: true
 # user
 set :user,            'deploy'
-set :use_sudo,        true
+set :use_sudo,        false
 # server
 set :stage,           :production
 set :deploy_via,      :remote_cache
